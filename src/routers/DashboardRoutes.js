@@ -21,6 +21,7 @@ export const DashboardRoutes = () => {
                 
                 <Route path="/" element={<MarvelScreen />} />
                 <Route path='*' element={ <Navigate to={ `${process.env.PUBLIC_URL}/login` }/> } />
+                <Route path='hero/*' element={ <Navigate to={ `${process.env.PUBLIC_URL}/login` }/> } />
             </Routes>      
         </div>
     </>

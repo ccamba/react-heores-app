@@ -21,7 +21,7 @@ export const LoginScreen = () => {
 
     dispatch( action );
 
-    const lastPath = localStorage.getItem('lastPath') || `${process.env.PUBLIC_URL}/marvel`;
+    const lastPath = localStorage.getItem('lastPath') || `./marvel`;
 
     //no se agrega al history
     navigate( lastPath, {
