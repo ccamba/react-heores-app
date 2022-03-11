@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-heroes-app/static/css/main.76e3dfc0.css",
-    "main.js": "/react-heroes-app/static/js/main.ca682fee.js",
+    "main.js": "/react-heroes-app/static/js/main.529bb3a7.js",
     "static/media/dc-wonder.jpg": "/react-heroes-app/static/media/dc-wonder.970ba2d62a4636ff6afb.jpg",
     "static/media/dc-flash.jpg": "/react-heroes-app/static/media/dc-flash.b3922f25f3765970d74c.jpg",
     "static/media/dc-martian.jpg": "/react-heroes-app/static/media/dc-martian.78565f7df6238ef8a601.jpg",
@@ -24,10 +24,10 @@
     "static/media/dc-robin.jpg": "/react-heroes-app/static/media/dc-robin.ea4afe99ecbc5480b0e3.jpg",
     "index.html": "/react-heroes-app/index.html",
     "main.76e3dfc0.css.map": "/react-heroes-app/static/css/main.76e3dfc0.css.map",
-    "main.ca682fee.js.map": "/react-heroes-app/static/js/main.ca682fee.js.map"
+    "main.529bb3a7.js.map": "/react-heroes-app/static/js/main.529bb3a7.js.map"
   },
   "entrypoints": [
     "static/css/main.76e3dfc0.css",
-    "static/js/main.ca682fee.js"
+    "static/js/main.529bb3a7.js"
   ]
 }
