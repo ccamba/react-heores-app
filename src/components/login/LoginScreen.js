@@ -1,13 +1,30 @@
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../../auth/authContext";
+import { types } from "../../types/types";
 
 export const LoginScreen = () => {
   
+  const { dispatch } = useContext( AuthContext );
+
   //Para navegar a otras pantallas
   const navigate = useNavigate();
 
   const handleLogin = () => {
+
+    const action = {
+      type: types.login,
+      payload: {
+        name: 'Cristian',
+      }
+    }
+
+    dispatch( action );
+
+    const lastPath = localStorage.getItem('lastPath') || '/marvel';
+
     //no se agrega al history
-    navigate('/', {
+    navigate( lastPath, {
       replace: true
     });
   }
