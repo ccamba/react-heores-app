@@ -16,5 +16,5 @@ export const PrivateRoute = ( { children }) => {
   const { pathname, search } = useLocation();
   localStorage.setItem('lastPath', pathname + search);
 
-  return user.logged ? children : <Navigate to="/login" />
+  return user.logged ? children : <Navigate to={ `${process.env.PUBLIC_URL}/login` } />
 }

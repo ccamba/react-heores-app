@@ -16,7 +16,7 @@ export const Navbar = () => {
         }
         dispatch( action );
 
-        navigate('/login', { replace: true });
+        navigate(`${process.env.PUBLIC_URL}/login`, { replace: true });
     }
 
     return (
@@ -24,7 +24,7 @@ export const Navbar = () => {
             
             <Link 
                 className="navbar-brand" 
-                to="/"
+                to={ `${process.env.PUBLIC_URL}/` }
             >
                 Asociaciones
             </Link>
@@ -34,21 +34,21 @@ export const Navbar = () => {
 
                     <NavLink 
                         className= { ({ isActive }) => 'nav-item nav-link' + (isActive ? ' active' : '') } 
-                        to="/marvel"
+                        to={ `${process.env.PUBLIC_URL}/marvel` }
                     >
                         Marvel
                     </NavLink>
 
                     <NavLink 
                         className= { ({ isActive }) => 'nav-item nav-link' + (isActive ? ' active' : '') } 
-                        to="/dc"
+                        to={ `${process.env.PUBLIC_URL}/dc` }
                     >
                         DC
                     </NavLink>
 
                     <NavLink 
                         className= { ({ isActive }) => 'nav-item nav-link' + (isActive ? ' active' : '') } 
-                        to="/search"
+                        to={ `${process.env.PUBLIC_URL}/search` }
                     >
                         Search
                     </NavLink>

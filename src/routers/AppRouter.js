@@ -9,14 +9,14 @@ export const AppRouter = () => {
     <div>
         <BrowserRouter>
             <Routes>
-                <Route path="/login" element={            
+                <Route path={ `${process.env.PUBLIC_URL}/login` } element={            
                   <PublicRoute>
                     <LoginScreen />
                   </PublicRoute>
                 } 
                 />
 
-                <Route path='/*' element={ 
+                <Route path={ `${process.env.PUBLIC_URL}/*` } element={ 
                     <PrivateRoute>
                       <DashboardRoutes />
                     </PrivateRoute>  

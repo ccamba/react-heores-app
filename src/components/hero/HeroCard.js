@@ -9,7 +9,7 @@ export const HeroCard = ({ hero }) => {
     //const imgPath = `/assets/${id}.jpg`; //assets en public
 
     return (
-        <Link to={`/hero/${id}`} className="my-card animate__animated animate__fadeIn">
+        <Link to={ `${process.env.PUBLIC_URL}/hero/${id}` } className="my-card animate__animated animate__fadeIn">
             <img src={ imgPath(`./${ id }.jpg`) } className="img img-responsive" alt={superhero}/>
             <div className="profile-name">{superhero}</div>
             <div className="profile-position">{alter_ego}</div>

@@ -16,7 +16,7 @@ export const HeroScreen = () => {
   };
 
   if (!hero) {
-    return <Navigate to='/' />;
+    return <Navigate to={ `${process.env.PUBLIC_URL}/` } />;
   }
 
   // const imgPath = `./assets/${ hero.id }.jpg`; assets en public

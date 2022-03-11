@@ -13,5 +13,5 @@ export const PublicRoute = ( { children }) => {
 
   const { user } = useContext( AuthContext );  
 
-  return !user.logged ? children : <Navigate to="/marvel" />
+  return !user.logged ? children : <Navigate to={ `${process.env.PUBLIC_URL}/marvel` } />
 }
