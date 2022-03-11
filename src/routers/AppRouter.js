@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LoginScreen } from "../components/login/LoginScreen";
 import { DashboardRoutes } from './DashboardRoutes';
 import { PrivateRoute } from "./PrivateRoute";
@@ -12,7 +12,6 @@ export const AppRouter = () => {
                 <Route path={ `${process.env.PUBLIC_URL}/login` } element={            
                   <PublicRoute>
                     <LoginScreen />
-                    <Outlet />
                   </PublicRoute>
                 } 
                 />
@@ -20,7 +19,6 @@ export const AppRouter = () => {
                 <Route path={ `${process.env.PUBLIC_URL}/*` } element={ 
                     <PrivateRoute>
                       <DashboardRoutes />
-                      <Outlet />
                     </PrivateRoute>  
                   } 
                 />
